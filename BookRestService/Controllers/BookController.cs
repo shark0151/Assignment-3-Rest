@@ -10,17 +10,13 @@ using BookLibraryAssignemnt;
 
 namespace BookRestService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class BookController : ControllerBase
     {
-        private static List<Book> BookList;
+        private static List<Book> BookList = DB_Books.BookList;
 
-        public BookController()
-        {
-            BookList = DB_Books.BookList;
-        }
-
+        public BookController() {}
 
         // GET: api/<BookController>
         [HttpGet]
@@ -33,7 +29,7 @@ namespace BookRestService.Controllers
         [HttpGet("{isbn13}")]
         public IActionResult Get(string isbn13)
         {
-            var book = DB_Books.GetAllBooks(isbn13);
+            var book = DB_Books.GetBook(isbn13);
             if (book != null)
             {
                 return Ok(book);
@@ -70,7 +66,7 @@ namespace BookRestService.Controllers
                 return BadRequest();
             }
 
-            Book currentBook = DB_Books.GetAllBooks(Isbn13);
+            Book currentBook = DB_Books.GetBook(Isbn13);
 
             if (currentBook != null)
             {
@@ -90,7 +86,7 @@ namespace BookRestService.Controllers
         [HttpDelete("{isbn13}")]
         public IActionResult Delete(string isbn13)
         {
-            var book = DB_Books.GetAllBooks(isbn13);
+            var book = DB_Books.GetBook(isbn13);
             if (book != null)
             {
                 BookList.Remove(book);
@@ -105,7 +101,6 @@ namespace BookRestService.Controllers
 
 
         // Helper method
-
         private bool BookExists(string isbn13)
         {
             return BookList.Any(b => b.Isbn == isbn13);

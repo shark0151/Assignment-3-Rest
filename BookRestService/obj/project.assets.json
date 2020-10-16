@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\BookRestService\\BookRestService\\BookRestService.csproj",
+      "projectUniqueName": "D:\\Projects\\Assignment-3-Rest\\BookRestService\\BookRestService.csproj",
       "projectName": "BookRestService",
-      "projectPath": "D:\\Projects\\BookRestService\\BookRestService\\BookRestService.csproj",
+      "projectPath": "D:\\Projects\\Assignment-3-Rest\\BookRestService\\BookRestService.csproj",
       "packagesPath": "C:\\Users\\vladf\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\BookRestService\\BookRestService\\obj\\",
+      "outputPath": "D:\\Projects\\Assignment-3-Rest\\BookRestService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\vladf\\AppData\\Roaming\\NuGet\\NuGet.Config",

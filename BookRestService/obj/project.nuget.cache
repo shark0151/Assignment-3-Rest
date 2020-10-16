@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ct1PsP5r5sXwWxBuoZlwmI7MMtNA4u9oz2USuAzNZH3m896rnVPxqWO3u+xuiZMqoBMfaVGLpf+4PQ04C/ztkg==",
+  "dgSpecHash": "Ru+nvlyxlFakHcY8lBUnK5J9dklViw+nhE/BN0TrhNxZWX0ycUbNLdnbaRbvfC2N8euozYpOjzzD7fyhsYcdSQ==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\BookRestService\\BookRestService\\BookRestService.csproj",
+  "projectFilePath": "D:\\Projects\\Assignment-3-Rest\\BookRestService\\BookRestService.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
